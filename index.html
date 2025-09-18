@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Курортный дом</title>
+  </head>
+  <body class="page serif">
+    <header class="page-header">
+      <div class="owner">
+        <div class="owner-content">
+          <a
+            class="location"
+            href="https://yandex.com/maps/10995/krasnodar-krai/geo/molodyozhnaya_ulitsa/1502869657/?ll=37.344651%2C45.037534&z=16.58"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Анапа, хутор Нижняя Гостагайка</a
+          >
+          <p class="logo">
+            Собственник
+            <img
+              src="img/avatar.png"
+              width="64"
+              alt="Avatar"
+              style="
+                border-radius: 100%;
+                object-fit: cover;
+                margin-top: 4px;
+                border: 1px solid #00c6bd;
+              "
+            />
+            Наталья<br />Кравченко
+          </p>
+          <p class="caption">Тема</p>
+          <ul class="theme-switcher">
+            <li>
+              <button class="theme-button-dark" type="button"></button>
+            </li>
+            <li>
+              <button class="theme-button-light active" type="button"></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="hero">
+        <h1>Продаётся половина дома <br />с отдельным входом и участком</h1>
+      </section>
+      <section class="gallery">
+        <div class="details">
+          <h2>Размер участка составляет 500м<sup>2</sup></h2>
+          <button class="price">Узнать цену</button>
+        </div>
+        <div class="slider">
+          <img
+            class="active-photo"
+            src="img/yard/house.JPG"
+            width="970"
+            height="690"
+            alt=""
+          />
+          <ul class="preview-list">
+            <li>
+              <a href="img/yard/finished.JPG">
+                <img
+                  src="img/yard/finished.JPG"
+                  width="170"
+                  height="150"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="img/yard/house-back.JPG">
+                <img
+                  src="img/yard/house-back.JPG"
+                  width="170"
+                  height="150"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="img/yard/building.JPG">
+                <img
+                  src="img/yard/building.JPG"
+                  width="170"
+                  height="150"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="img/yard/house.JPG" class="active-item">
+                <img src="img/yard/house.JPG" width="170" height="150" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advantages">
+        <header>
+          <h2>Почему этот участок - удача:</h2>
+          <ul class="card-view-buttons">
+            <li class="card-view-item">
+              <button
+                class="card-view-button-grid active"
+                type="button"
+              ></button>
+            </li>
+            <li class="card-view-item">
+              <button class="card-view-button-list" type="button"></button>
+            </li>
+          </ul>
+        </header>
+        <ul class="cards">
+          <li class="card">
+            <img
+              class="card-img"
+              src="img/anapa/near-sea.JPG"
+              width="310"
+              height="171"
+              alt="Белая двухпалубная яхта"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Море рядом</h3>
+              <p class="card-description">
+                Каждое утро можете быть на пляже через 15 минут. Вечерние
+                прогулки по набережной Анапы станут обычным делом.
+              </p>
+              <ul class="card-features">
+                <li>
+                  20 минут езды на машине до центра курортного города с развитой
+                  инфраструктурой
+                </li>
+                <li>Пляж Витязево в 15 минутах езды</li>
+                <li>Аэропорт – в 10 минутах, и ЖД вокзал в – 15 минутах</li>
+
+                <li>
+                  Тихий экологически чистый хутор вдали от городской суеты
+                </li>
+                <li>Лучшее из двух миров: природа + близость к цивилизации</li>
+              </ul>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              style="object-position: 50% 70%"
+              class="card-img"
+              src="img//yard/harvest-2.JPG"
+              width="310"
+              height="171"
+              alt="Белая двухпалубная яхта"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Большая территория</h3>
+              <p class="card-description">
+                Плодоносящий сад уже приносит урожай. Наслаждайтесь экологически
+                чистыми фруктами, готовьте барбекю или загорайте на солнышке,
+                места хватит для всего.
+              </p>
+              <ul class="card-features">
+                <li>Ухоженный огород</li>
+                <li>Действующий плодовый сад - персики, яблони, вишня</li>
+                <li>Готовая основа для строительства дома мечты</li>
+                <li>
+                  Дополнительно на участке начато строительство небольшого
+                  домика. Он может стать русской банькой, дополнительной жилой
+                  студией или рабочей зоной. Воплотите ваши желания в
+                  реальность!
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="card">
+            <img
+              style="object-position: 50% 28%"
+              class="card-img"
+              src="img/yard/sweet-home.JPG"
+              width="310"
+              height="171"
+              alt="Белая яхта"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Жилой дом</h3>
+              <p class="card-description">
+                Не нужно тянуть газ, воду и свет - все уже есть. Экономия
+                времени и денег при любом строительстве.
+              </p>
+              <ul class="card-features">
+                <li>74 м² с готовой планировкой (3 комнаты + кухня)</li>
+                <li>Можно сразу заселяться</li>
+                <li>Или использовать как гостевой/дачный дом</li>
+                <li>
+                  Изолированная территория. Части дома полностью изолированы
+                  друг от друга, и участок ограждён от соседей. Соседи
+                  приветливые и не беспококоят своим присутствием. Фактически
+                  это два отдельных участка с отдельными жилищами под одной
+                  крышей.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="usage">
+        <h2>Варианты использования</h2>
+        <article class="option">
+          <div class="option-content">
+            <h4>1. Для строительства:</h4>
+            <p>
+              Можно строить и достраивать. Рядом с основным домом есть
+              незавершённая пристройка. Меняйте дом под ваш вкус. Все
+              коммуникации уже есть - начинайте сразу жить в существующем доме
+              во время стройки.
+            </p>
+            <h4>2. Для дачи:</h4>
+            <p>
+              Готовый дачный дом с садом. Выращивайте овощи и фрукты, отдыхайте
+              от городской суеты и оздоравливайтесь на море.
+            </p>
+            <h4>3. Для инвестиций:</h4>
+            <p>
+              Земля в курортной зоне только дорожает. Дом можно сдавать
+              посуточно туристам. А также это перспективная локация для развития
+              бизнеса.
+            </p>
+            <h4>4. Для переезда к морю:</h4>
+            <p>
+              Идеальная локация для ценителей красоты природы. Свой сад, свой
+              дом, чистый воздух. При этом вся инфраструктура курорта рядом.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="usage">
+        <h2>О доме (честно и прямо)</h2>
+        <article class="option">
+          <div class="option-content">
+            <h4>
+              Уютный дом, новые пластиковые окна, срочный ремонт не требуется,
+              но при желании его можно обновить.
+            </h4>
+            <ul>
+              <li>Дом в жилом состоянии, можно заселяться сразу</li>
+              <li>
+                Крепкие стены, продуманная планировка (3 изолированные комнаты)
+              </li>
+              <li>Панорамные окна, высокие потолки (2.7м), гардеробная</li>
+              <li>Газовое отопление, центральное водоснабжение</li>
+              <li>Отличная основа для реконструкции по вашему вкусу</li>
+            </ul>
+            <h4>Юридическая чистота:</h4>
+            <ul>
+              <li>Проверено Росреестром</li>
+              <li>1 собственник более 20 лет (с 2001 года)</li>
+              <li>Никаких обременений и ограничений</li>
+              <li>Готово к быстрой продаже</li>
+              <li>Все документы в идеальном порядке</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="gallery">
+        <h2>Что внутри?</h2>
+        <div class="slider">
+          <img
+            class="active-image"
+            src="img/house-inside/kitchen-stove.JPG"
+            width="570"
+            height="690"
+            alt=""
+          />
+          <div class="miniatures-contain">
+            <ul class="miniatures">
+              <li>
+                <a href="img/house-inside/hall.JPG">
+                  <img
+                    src="img/house-inside/hall.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/kitchen.JPG">
+                  <img
+                    src="img/house-inside/kitchen.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/window.JPG">
+                  <img
+                    src="img/house-inside/window.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/living-room.JPG">
+                  <img
+                    src="img/house-inside/living-room.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/bedroom-1.JPG">
+                  <img
+                    src="img/house-inside/bedroom-1.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/bedroom-2.JPG">
+                  <img
+                    src="img/house-inside/bedroom-2.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/second-bedroom.JPG">
+                  <img
+                    src="img/house-inside/second-bedroom.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/bathroom.JPG">
+                  <img
+                    src="img/house-inside/bathroom.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/bathroom-2.JPG">
+                  <img
+                    src="img/house-inside/bathroom-2.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/construction.JPG">
+                  <img
+                    src="img/house-inside/construction.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/house-inside/construction-2.JPG">
+                  <img
+                    src="img/house-inside/construction-2.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="img/house-inside/kitchen-stove.JPG"
+                  class="active-item"
+                >
+                  <img
+                    src="img/house-inside/kitchen-stove.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <article class="blog-article blog-article-1">
+        <div class="blog-article-content">
+          <h2 class="article-tittle">Почему стоит покупать сейчас</h2>
+          <p class="blog-article-description">
+            📈 Участки в курортных зонах у моря показывают стабильный рост цен.
+            Через 2-3 года аналогичный участок будет стоить значительно дороже.
+            Всего несколько лет назад соседний посёлок городского типа Витязево
+            официально стал районом города курорта Анапа. Таким образом,
+            расстояние от хутора до города теперь составляет 8 километров.
+            <br /><br />🏖️ Анапа активно развивается. Федеральные инвестиции в
+            курортную инфраструктуру, новые дороги, развитие туризма - все это
+            увеличивает привлекательность района. К 2029 году, как сообщают
+            власти, в хуторе появятся детский сад, школа, парк, новые магазины и
+            многое другое. Сейчас детей по школам развозят школьные автобусы
+            соседних посёлков. <br /><br />🎯 Редкое предложение! Участки с
+            готовыми коммуникациями и садом в курортной зоне появляются на рынке
+            нечасто. <br /><br />🌊 Можно использовать круглый год - мягкий
+            климат, близость к морю зимой тоже привлекательна.
+          </p>
+        </div>
+      </article>
+      <section class="contacts">
+        <div class="contacts-content">
+          <h2>Готовы к жизни у моря?</h2>
+          <h3>Этот участок ждет хозяев, которые ценят курортную жизнь!</h3>
+
+          <h4>Свяжитесь со мной для:</h4>
+          <ul class="contact-items">
+            <li class="contact-item">
+              Поездки на осмотр (покажем дорогу до пляжей);
+            </li>
+            <li class="contact-item">Обсуждения цены и условий оплаты;</li>
+            <li class="contact-item">Быстрого оформления сделки;</li>
+          </ul>
+          <ul class="contact-items">
+            <li class="contact-item">
+              <h3>Телефон:</h3>
+              <a href="tel:+7000000000">8 (000) 00-00-00</a>
+            </li>
+            <li class="contact-item">
+              <h3>E-mail:</h3>
+              <a href="mailto:yachtclub-sochi@mail.ru">Если нужен</a>
+            </li>
+          </ul>
+        </div>
+        <img
+          class="contacts-img"
+          src="img/map.png"
+          width="870"
+          height="551"
+          alt="Карта"
+        />
+      </section>
+      <section class="gallery bottom">
+        <h2>Галерея</h2>
+        <div class="slider">
+          <img
+            class="active-element"
+            src="img/yard/garden.JPG"
+            width="570"
+            height="690"
+            alt=""
+          />
+          <div class="elements-contain">
+            <ul class="elements">
+              <li>
+                <a href="img/yard/garden-2.JPG">
+                  <img
+                    src="img/yard/garden-2.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/yard/garden-3.JPG">
+                  <img
+                    src="img/yard/garden-3.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/yard/garden-4.JPG">
+                  <img
+                    src="img/yard/garden-4.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/yard/garden-5.JPG">
+                  <img
+                    src="img/yard/garden-5.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/yard/garden-6.JPG">
+                  <img
+                    src="img/yard/garden-6.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/yard/yard.JPG">
+                  <img
+                    src="img/yard/yard.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/anapa/bugazskaya.JPG">
+                  <img
+                    src="img/anapa/bugazskaya.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/anapa/sunset.JPG">
+                  <img
+                    src="img/anapa/sunset.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/anapa/dinner.JPG">
+                  <img
+                    src="img/anapa/dinner.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/anapa/dinner-2.JPG">
+                  <img
+                    src="img/anapa/dinner-2.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/anapa/fish.JPG">
+                  <img
+                    src="img/anapa/fish.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/anapa/oyster.JPG">
+                  <img
+                    src="img/anapa/oyster.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="img/yard/garden.JPG" class="active-item">
+                  <img
+                    src="img/yard/garden.JPG"
+                    width="220"
+                    height="210"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="logo">
+        <img
+          src="img/avatar.png"
+          width="100"
+          height="106"
+          alt="Аватар"
+          style="
+            border-radius: 100%;
+            object-fit: cover;
+            margin-top: 4px;
+            border: 1px solid #00c6bd;
+          "
+        />
+        Наталья<br />Кравченко
+      </p>
+      <h1>С любовью для новых хозяев</h1>
+      <button id="toTopBtn">↑ Наверх</button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
