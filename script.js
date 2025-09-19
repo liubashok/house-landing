@@ -79,7 +79,7 @@ for (let currentImage of miniatures) {
 
     currentImage.classList.add("active-item");
 
-    activeImage.src = currentImage.href;
+    activeImage.src = currentImage;
 
     const li = currentImage.closest("li");
     const containerRect = miniaturesContainer.getBoundingClientRect();
