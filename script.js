@@ -6,8 +6,10 @@ let buttonGrid = document.querySelector(".card-view-button-grid");
 let buttonList = document.querySelector(".card-view-button-list");
 let cards = document.querySelector(".cards");
 let previews = document.querySelectorAll(".preview-list a");
-let miniatures = document.querySelectorAll(".miniatures a");
-let elements = document.querySelectorAll(".elements a");
+let miniaturesContainer = document.querySelector(".miniatures-container");
+let miniatures = miniaturesContainer.querySelectorAll("a");
+let elementsContainer = document.querySelector(".elements-container");
+let elements = elementsContainer.querySelectorAll("a");
 let activePhoto = document.querySelector(".active-photo");
 let activeImage = document.querySelector(".active-image");
 let activeElement = document.querySelector(".active-element");
@@ -71,22 +73,42 @@ for (let currentPhoto of previews) {
 for (let currentImage of miniatures) {
   currentImage.onclick = function (evt) {
     evt.preventDefault();
-    let miniActive = document.querySelector(".miniatures .active-item");
-    miniActive.classList.remove("active-item");
+
+    let miniActive = miniaturesContainer.querySelector(".active-item");
+    if (miniActive) miniActive.classList.remove("active-item");
+
     currentImage.classList.add("active-item");
 
-    activeImage.src = currentImage;
+    activeImage.src = currentImage.href;
+
+    const li = currentImage.closest("li");
+    const containerRect = miniaturesContainer.getBoundingClientRect();
+    const liRect = li.getBoundingClientRect();
+    const scrollTop =
+      miniaturesContainer.scrollTop + (liRect.top - containerRect.top);
+
+    miniaturesContainer.scrollTo({ top: scrollTop, behavior: "smooth" });
   };
 }
 
 for (let currentElement of elements) {
   currentElement.onclick = function (evt) {
     evt.preventDefault();
-    let elementActive = document.querySelector(".elements .active-item");
-    elementActive.classList.remove("active-item");
+
+    let elementActive = elementsContainer.querySelector(".active-item");
+    if (elementActive) elementActive.classList.remove("active-item");
+
     currentElement.classList.add("active-item");
 
-    activeElement.src = currentElement;
+    activeElement.src = currentElement.href;
+
+    const li = currentElement.closest("li");
+    const containerRect = elementsContainer.getBoundingClientRect();
+    const liRect = li.getBoundingClientRect();
+    const scrollTop =
+      elementsContainer.scrollTop + (liRect.top - containerRect.top);
+
+    elementsContainer.scrollTo({ top: scrollTop, behavior: "smooth" });
   };
 }
 

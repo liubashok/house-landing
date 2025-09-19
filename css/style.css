@@ -438,25 +438,32 @@ body {
   object-position: 50% 40%;
 }
 
-.miniatures-contain,
-.elements-contain {
+.miniatures-container,
+.elements-container {
   margin-right: 150px;
   width: 270px;
   height: 690px;
   overflow-y: auto;
 }
 
-.miniatures-contain::-webkit-scrollbar,
-.elements-contain::-webkit-scrollbar {
-  background-color: #77777741;
+.miniatures-container::-webkit-scrollbar,
+.elements-container::-webkit-scrollbar {
+  background-color: #a4a4a40f;
   width: 10px;
   border-radius: 30px;
 }
 
-.miniatures-contain::-webkit-scrollbar-thumb,
-.elements-contain::-webkit-scrollbar-thumb {
+.miniatures-container::-webkit-scrollbar-thumb,
+.elements-container::-webkit-scrollbar-thumb {
   background-color: #3bb8b8b4;
   border-radius: 30px;
+}
+
+/* Firefox */
+.miniatures-container,
+.elements-container {
+  scrollbar-width: thin;
+  scrollbar-color: #3bb8b8b4 #a4a4a40f;
 }
 
 .preview-list {
