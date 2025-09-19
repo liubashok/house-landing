@@ -442,8 +442,19 @@ body {
 .elements-container {
   margin-right: 150px;
   width: 270px;
-  height: 690px;
+  max-height: 690px;
   overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .active-photo {
+    height: 50vw;
+  }
+
+  .miniatures-container,
+  .elements-container {
+    max-height: 50vw;
+  }
 }
 
 .miniatures-container::-webkit-scrollbar,

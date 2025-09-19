@@ -100,7 +100,7 @@ for (let currentElement of elements) {
 
     currentElement.classList.add("active-item");
 
-    activeElement.src = currentElement.href;
+    activeElement.src = currentElement;
 
     const li = currentElement.closest("li");
     const containerRect = elementsContainer.getBoundingClientRect();
