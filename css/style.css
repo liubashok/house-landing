@@ -23,9 +23,12 @@ body {
 .owner-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 1170px;
   margin: 0 auto;
   padding-bottom: 40px;
+  padding-left: 55px;
+  padding-right: 55px;
   border-bottom: 1px solid rgba(22, 49, 82, 0.1);
 }
 
@@ -33,7 +36,6 @@ body {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 25px;
-  margin-right: auto;
   margin-left: 20px;
   font-size: 14px;
   line-height: 14px;
@@ -42,6 +44,13 @@ body {
   background-image: url("../img/pin.svg");
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+@media (max-width: 768px) {
+  .location {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .location:hover {
@@ -61,11 +70,23 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .caption {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .theme-switcher {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-right: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -135,11 +156,19 @@ body {
   height: 68px;
   margin: 0;
   margin-bottom: 25px;
-  margin-right: auto;
   font-size: 10px;
   text-align: center;
   line-height: 10px;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    width: 100px;
+  }
 }
 
 /* main */
@@ -169,6 +198,12 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .hero h1 {
+    text-align: left;
+  }
+}
+
 .price {
   display: flex;
   align-items: center;
@@ -179,6 +214,12 @@ body {
   border-radius: 10px;
   margin-left: 250px;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .price {
+    font-size: 22px;
+  }
 }
 
 .price:hover {
@@ -221,7 +262,7 @@ body {
   margin-bottom: 45px;
 }
 
-.advantages h2 {
+.advantages header h2 {
   margin: 0;
   font-size: 24px;
   line-height: 34px;
@@ -230,6 +271,13 @@ body {
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
   text-underline-position: under;
+}
+
+@media (max-width: 768px) {
+  .advantages header h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 
 .card-view-buttons {
@@ -321,11 +369,25 @@ body {
   line-height: 23px;
 }
 
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
 .card-description {
   margin: 0;
   margin-bottom: 15px;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (max-width: 768px) {
+  .card-description {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .card-features {
@@ -342,13 +404,11 @@ body {
   line-height: 19px;
 }
 
-.card-price {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
+@media (max-width: 768px) {
+  .card-features li {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 /* Вертикальная раскладка карточек списком */
@@ -370,6 +430,8 @@ body {
   margin: 0;
   margin-right: 30px;
   object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .cards.list .card-title {
@@ -418,6 +480,13 @@ body {
   text-underline-position: under;
 }
 
+@media (max-width: 768px) {
+  .gallery h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
 .slider {
   display: flex;
   align-items: flex-start;
@@ -444,17 +513,6 @@ body {
   width: 270px;
   max-height: 690px;
   overflow-y: auto;
-}
-
-@media (max-width: 768px) {
-  .active-photo {
-    height: 50vw;
-  }
-
-  .miniatures-container,
-  .elements-container {
-    max-height: 50vw;
-  }
 }
 
 .miniatures-container::-webkit-scrollbar,
@@ -558,6 +616,13 @@ body {
   text-underline-position: under;
 }
 
+@media (max-width: 768px) {
+  .usage h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
 .option-content h4 {
   margin-top: 24px;
   margin-bottom: 15px;
@@ -565,10 +630,24 @@ body {
   line-height: 26px;
 }
 
+@media (max-width: 768px) {
+  .option-content h4 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
 .option-content p {
   margin: 12px 0;
   font-size: 18px;
   line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .option-content p {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .option-content ul {
@@ -579,6 +658,13 @@ body {
   margin-left: 19px;
   font-size: 18px;
   line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .option-content ul {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .option-content li {
@@ -613,9 +699,23 @@ body {
   text-underline-position: under;
 }
 
+@media (max-width: 768px) {
+  .article-tittle {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
 .blog-article-description {
   margin-top: 0;
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .blog-article-description {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 /* contacts */
@@ -649,6 +749,21 @@ body {
   text-underline-position: under;
 }
 
+@media (max-width: 768px) {
+  .contacts h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .contacts h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .contacts h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
 .contact-items {
   list-style: none;
   padding: 0;
@@ -662,12 +777,26 @@ body {
   line-height: 22px;
 }
 
+@media (max-width: 768px) {
+  .contact-item {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .contact-item h3 {
   display: inline;
   margin: 0;
   margin-right: 8px;
   font-size: 16px;
   line-height: 22px;
+}
+
+@media (max-width: 768px) {
+  .contact-item h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
 }
 
 .contact-item a {
@@ -697,6 +826,15 @@ body {
   line-height: 12px;
   border-top: 1px solid rgba(22, 49, 82, 0.1);
   width: 1170px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    font-size: 16px;
+    line-height: 18;
+  }
 }
 
 .main-footer .logo {
@@ -804,6 +942,12 @@ body {
   font-size: 16px;
   opacity: 0.7;
   transition: opacity 0.3s;
+}
+
+@media (max-width: 768px) {
+  #toTopBtn {
+    font-size: 24px;
+  }
 }
 
 #toTopBtn:hover {

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,15 +38,20 @@
             />
             Наталья<br />Кравченко
           </p>
-          <p class="caption">Тема</p>
-          <ul class="theme-switcher">
-            <li>
-              <button class="theme-button-dark" type="button"></button>
-            </li>
-            <li>
-              <button class="theme-button-light active" type="button"></button>
-            </li>
-          </ul>
+          <div class="theme">
+            <p class="caption">Тема</p>
+            <ul class="theme-switcher">
+              <li>
+                <button class="theme-button-dark" type="button"></button>
+              </li>
+              <li>
+                <button
+                  class="theme-button-light active"
+                  type="button"
+                ></button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -648,7 +654,7 @@
         Наталья<br />Кравченко
       </p>
       <h1>С любовью для новых хозяев</h1>
-      <button id="toTopBtn">↑ Наверх</button>
+      <button class="top" id="toTopBtn">↑ Наверх</button>
     </footer>
     <script src="script.js"></script>
   </body>
